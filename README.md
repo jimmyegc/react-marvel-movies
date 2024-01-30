@@ -1,8 +1,34 @@
-# React + Vite
+Crea un pequeño proyecto que te permita consumir las siguentes APIs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Nota: los valores de TS, PUBLIC_KEY Y HASH los puedes encontrar en el folder 
 
-Currently, two official plugins are available:
+```
+    src/const/api.js
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Lista los personajes de Marvel
+```
+    http://gateway.marvel.com/v1/public/characters?ts=${TS}&apikey=$`{PUBLIC_KEY}&hash=${HASH}
+```
+
+Detalles de un personaje
+
+``` 
+    http://gateway.marvel.com/v1/public/characters/${caracterId}?ts=${TS}&apikey=${PUBLIC_KEY}&hash=${HASH}
+```
+
+Puedes iniciar tu proyecto con los siguientes comandos
+
+```
+    npm install
+    npm run dev
+```
+
+Las siguientes imagenes te muestran un pequeño mock del sistema requerido.
+
+Main
+
+![Main Image](readme_doc/main.png)
+
+Details
+![Details image](/readme_doc/details.png)
