@@ -1,0 +1,14 @@
+.container {
+  justify-content: center;
+  width: 90%;
+  margin: 0rem auto;
+}
+
+.caracters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 1.5rem;
+  /*background-image: url(../../assets/paper.jpg);*/
+  padding: 10px;
+}

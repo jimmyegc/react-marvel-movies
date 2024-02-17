@@ -1,11 +1,10 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import Routes from "./routes";
+
+import "./App.css";
 
 function App() {
-
-  return (
-    <h1> Test </h1>
-  )
+  return <Routes />;
 }
 
-export default App
+export default App;

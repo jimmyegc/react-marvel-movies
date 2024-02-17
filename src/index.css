@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Lato&display=swap");
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,43 +15,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-}
-
-.wrapper{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(
+        45deg,
+        rgba(0, 110, 193, 0.3),
+        rgba(0, 115, 138, 0.1)
+      )
+      no-repeat fixed center,
+    url("./assets/bg-marvel.png") no-repeat fixed center;
+  background-size: cover;
 }
